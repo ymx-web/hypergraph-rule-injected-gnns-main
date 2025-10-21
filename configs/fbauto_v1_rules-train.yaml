@@ -4,9 +4,9 @@ dataset_name: FB-AUTO
 # ===============================
 # Dataset paths
 # ===============================
-train_path: data/FB-AUTO/train/train_2.txt
-valid_path: data/FB-AUTO/valid/valid_2.txt
-test_graph: data/FB-AUTO/test/test_2.txt
+train_path: data/FB-AUTO/train/train.txt
+valid_path: data/FB-AUTO/valid/valid.txt
+test_graph: data/FB-AUTO/test/test.txt
 
 # ===============================
 # Graph construction
