@@ -1,0 +1,49 @@
+exp_name: wikipeople_v3_rules
+dataset_name: WikiPeople-3
+
+# ===============================
+# Dataset paths
+# ===============================
+train_path: data/WikiPeople-3/train/train.txt
+valid_path: data/WikiPeople-3/valid/valid.txt
+test_graph: data/WikiPeople-3/test/test.txt
+
+# ===============================
+# Graph construction
+# ===============================
+add_2hop: true
+
+# ===============================
+# Learning parameters
+# ===============================
+learning_rate: 0.003
+weight_decay: 0.0
+dropout: 0.1
+num_layers: 3
+num_epochs: 1200
+bce_weight: 5.0
+lr_gamma: 0.99
+early_stop_patience: 200
+log_every: 50
+num_neg_eval: 50
+
+# ===============================
+# Thresholds
+# ===============================
+threshold: 0.5
+threshold_a: 0.1
+threshold_b: 0.6
+sc_threshold: 0.5
+
+# ===============================
+# Rule guidance
+# ===============================
+add_rules: true
+rule_weight: 0.8
+rule_file_path: data/WikiPeople-3_rules.txt
+
+# ===============================
+# Constraints
+# ===============================
+add_constraints: true
+add_mask: true
